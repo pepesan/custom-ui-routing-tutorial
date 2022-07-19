@@ -1,9 +1,10 @@
 import React, {Fragment, useEffect, useState} from "react";
 import { view } from "@forge/bridge";
 import { Router, Route, Routes } from "react-router";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Form01 from "./components/formularios/Form01";
+import Home from "./components/pages/home/Home";
+import About from "./components/pages/about/About";
+import Form01 from "./components/pages/formularios/Form01";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     const [history, setHistory] = useState(null);
@@ -51,6 +52,7 @@ function App() {
                             <Route path="/form" element={<Form01 />}></Route>
                         </Routes>
                     </Router>
+
                 </div>
             ) : (
                 "Loading..."
