@@ -19,6 +19,8 @@ function Menu() {
                         <MenuLink to="/">Home</MenuLink>
                         <MenuLink to="/about">About</MenuLink>
                         <MenuLink to="/form">Form</MenuLink>
+                        <MenuLink to="/form2">Form2</MenuLink>
+
                     </div>
                 </div>
             </div>
