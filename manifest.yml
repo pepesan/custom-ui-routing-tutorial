@@ -1,0 +1,15 @@
+modules:
+  jira:adminPage:
+    - key: custom-ui-routing-tutorial-hello-world-admin-page
+      resource: main
+      resolver:
+        function: resolver
+      title: Pagina de Admin Jira con Custom UI by Pepesan
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/3c325157-9b73-4514-85d2-3969bbc80e4b
