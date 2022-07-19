@@ -1,34 +1,8 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { view } from "@forge/bridge";
 import { Router, Route, Routes, useNavigate } from "react-router";
-
-function Link({ to, children }) {
-    const navigate = useNavigate();
-    return (
-        <a
-            href={to}
-            onClick={(event) => {
-                event.preventDefault();
-                navigate(to);
-            }}
-        >
-            {children}
-        </a>
-    );
-}
-
-function Home() {
-    return (
-        <Fragment>
-            <h2>Home</h2>
-            <Link to="/page-with-path">Route to page with path</Link>
-        </Fragment>
-    );
-}
-
-function PageWithPath() {
-    return <h2>Page with path</h2>;
-}
+import Home from "./components/home/Home";
+import About from "./components/about/About";
 
 function App() {
     const [history, setHistory] = useState(null);
@@ -70,7 +44,7 @@ function App() {
                     location={historyState.location}
                 >
                     <Routes>
-                        <Route path="/page-with-path" element={<PageWithPath />}></Route>
+                        <Route path="/about" element={<About />}></Route>
                         <Route path="/" element={<Home />}></Route>
                     </Routes>
                 </Router>
