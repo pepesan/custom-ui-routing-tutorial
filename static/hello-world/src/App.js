@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import { view } from "@forge/bridge";
-import { Router, Route, Routes, useNavigate } from "react-router";
+import { Router, Route, Routes } from "react-router";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import Form01 from "./components/formularios/Form01";
 
 function App() {
     const [history, setHistory] = useState(null);
@@ -38,16 +39,19 @@ function App() {
     return (
         <div>
             {history && historyState ? (
-                <Router
+                <div>
+                    <Router
                     navigator={history}
                     navigationType={historyState.action}
                     location={historyState.location}
                 >
-                    <Routes>
-                        <Route path="/about" element={<About />}></Route>
-                        <Route path="/" element={<Home />}></Route>
-                    </Routes>
-                </Router>
+                        <Routes>
+                            <Route path="/" element={<Home />}></Route>
+                            <Route path="/about" element={<About />}></Route>
+                            <Route path="/form" element={<Form01 />}></Route>
+                        </Routes>
+                    </Router>
+                </div>
             ) : (
                 "Loading..."
             )}

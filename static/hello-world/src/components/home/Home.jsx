@@ -6,6 +6,7 @@ function Home() {
         <Fragment>
             <h2>Home</h2>
             <Link to="/about">About</Link>
+            <Link to="/form">Formulario</Link>
         </Fragment>
     );
 }
