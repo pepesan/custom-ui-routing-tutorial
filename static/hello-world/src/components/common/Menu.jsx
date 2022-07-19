@@ -20,6 +20,7 @@ function Menu() {
                         <MenuLink to="/about">About</MenuLink>
                         <MenuLink to="/form">Form</MenuLink>
                         <MenuLink to="/form2">Form2</MenuLink>
+                        <MenuLink to="/formik">Formik</MenuLink>
 
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import About from "./components/pages/about/About";
 import Form01 from "./components/pages/formularios/Form01";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form02 from "./components/pages/formularios/Form02";
+import FormFormik from "./components/pages/formularios/FormFormik";
 
 function App() {
     const [history, setHistory] = useState(null);
@@ -52,6 +53,7 @@ function App() {
                             <Route path="/about" element={<About />}></Route>
                             <Route path="/form" element={<Form01 />}></Route>
                             <Route path="/form2" element={<Form02 />}></Route>
+                            <Route path="/formik" element={<FormFormik />}></Route>
 
                         </Routes>
                     </Router>
