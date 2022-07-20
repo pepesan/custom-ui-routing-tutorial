@@ -21,6 +21,7 @@ function Menu() {
                         <MenuLink to="/form">Form</MenuLink>
                         <MenuLink to="/form2">Form2</MenuLink>
                         <MenuLink to="/formik">Formik</MenuLink>
+                        <MenuLink to="/api">Api Caller</MenuLink>
 
                     </div>
                 </div>
