@@ -1,11 +1,12 @@
 import React from 'react';
 import axios from "axios";
 import "./CargaDatos.css";
+import Menu from "../../common/Menu";
 class CargaDatos extends React.Component {
     constructor(props) {
         super(props);
         this.state = {datos: []};
-        //this.recarga();
+        this.recarga();
     }
     recarga = () =>{ // Llamamos a Axios para hacer la petición web get a la dirección URL
         axios.get(`https://cursosdedesarrollo.com/pactometro/resultados.json`)
@@ -16,6 +17,7 @@ class CargaDatos extends React.Component {
     render() {
         return (
             <div>
+                <Menu></Menu>
                 <h2>Listado de Partidos</h2>
                 <button onClick={this.recarga}>
                     Carga
