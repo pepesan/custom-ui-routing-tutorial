@@ -17,7 +17,17 @@ app:
 permissions:
   scopes:
     - read:jira-work
+  content:
+    scripts:
+      - 'unsafe-hashes'
   external:
+    images:
+      - "*.cursosdedesarrollo.com"
+      - "cursosdedesarrollo.com"
     fetch:
       backend:
         - "*.cursosdedesarrollo.com"
+        - "cursosdedesarrollo.com"
+      client:
+        - "*.cursosdedesarrollo.com"
+        - "cursosdedesarrollo.com"

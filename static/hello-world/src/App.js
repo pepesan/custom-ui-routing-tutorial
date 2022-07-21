@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Form02 from "./components/pages/formularios/Form02";
 import FormFormik from "./components/pages/formularios/FormFormik";
 import ApiCaller from "./components/pages/api/ApiCaller";
+import CargaDatos from "./components/pages/httprequest/CargaDatos";
 
 function App() {
     const [history, setHistory] = useState(null);
@@ -56,7 +57,8 @@ function App() {
                             <Route path="/form2" element={<Form02 />}></Route>
                             <Route path="/formik" element={<FormFormik />}></Route>
                             <Route path="/api" element={<ApiCaller />}></Route>
-
+                            <Route path="/api-externo" element={<CargaDatos />}></Route>
+                            CargaDatos
                         </Routes>
                     </Router>
 
