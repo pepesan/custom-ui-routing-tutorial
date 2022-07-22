@@ -57,8 +57,7 @@ function App() {
                             <Route path="/form2" element={<Form02 />}></Route>
                             <Route path="/formik" element={<FormFormik />}></Route>
                             <Route path="/api" element={<ApiCaller />}></Route>
-                            <Route path="/api-externo" element={<CargaDatos />}></Route>
-                            CargaDatos
+                            <Route path="/externo" element={<CargaDatos />}></Route>
                         </Routes>
                     </Router>
 

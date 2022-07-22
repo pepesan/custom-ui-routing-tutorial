@@ -27,7 +27,10 @@ class CargaDatos extends React.Component {
                         <article key={item.nombre}>
                             <h3>{item.nombre}</h3>
                             <p>{item.dipu}</p>
-                            <p><img className="logo-partido" alt="Logo partido" src={`https://cursosdedesarrollo.com/pactometro/img/${item.imagen}`}/></p>
+                            <p><img
+                                className="logo-partido"
+                                alt="Logo partido"
+                                src={`https://cursosdedesarrollo.com/pactometro/img/${item.imagen}`}/></p>
                         </article>
                     )}
                 </div>

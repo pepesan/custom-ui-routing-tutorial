@@ -22,7 +22,7 @@ function Menu() {
                         <MenuLink to="/form2">Form2</MenuLink>
                         <MenuLink to="/formik">Formik</MenuLink>
                         <MenuLink to="/api">Api Caller</MenuLink>
-                        <MenuLink to="/api-externo">Api Externo</MenuLink>
+                        <MenuLink to="/externo">Api Externo</MenuLink>
 
 
                     </div>

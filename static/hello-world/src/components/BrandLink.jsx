@@ -2,7 +2,7 @@ import {useNavigate} from "react-router";
 import React from "react";
 
 
-function Link({ to, children }) {
+function BrandLink({ to, children }) {
     const navigate = useNavigate();
     return (
         <a
@@ -17,4 +17,4 @@ function Link({ to, children }) {
         </a>
     );
 }
-export default Link;
+export default BrandLink;

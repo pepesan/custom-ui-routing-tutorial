@@ -31,3 +31,4 @@ permissions:
       client:
         - "*.cursosdedesarrollo.com"
         - "cursosdedesarrollo.com"
+        - "mordor.cursosdedesarrollo.com"

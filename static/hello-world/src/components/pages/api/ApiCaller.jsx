@@ -1,22 +1,16 @@
 import React, {Fragment, useEffect, useState} from "react";
 import Menu from "../../common/Menu";
-import { requestJira } from '@forge/bridge';
+import {getProjectsData} from "../../../services/jiraapiservice";
 
-const getProjectsData = async () => {
-    const response = await requestJira('/rest/api/3/project/search');
-    const miJson = await response.json()
-    console.log(miJson);
-    console.log(miJson.values);
-    return miJson;
-}
+
 
 function ApiCaller() {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState(null);
     useEffect(async () => {
         let data = await getProjectsData();
-        setIsLoading(false);
         setData(data);
+        setIsLoading(false);
         console.log(data);
     }, []);
     if (isLoading) {
